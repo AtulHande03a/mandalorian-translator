@@ -6,4 +6,4 @@ This app will translate any english sentence to mandalorian language. If you are
 - CSS
 - VanillaJS
 - Fetch API
-- Mandaloria Translator from Fun Translations API - https://funtranslations.com/api/
+- Mandaloria Translator from Fun Translations API - https://funtranslations.com/api/mandalorian
