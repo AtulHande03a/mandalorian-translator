@@ -3,9 +3,14 @@
 :root {
   --primary: #003049;
   --black: #eae2b7;
-  --width-break: 600px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
 body {
   margin: 0;
   font-family: 'Lilita One', Helvetica, Arial, sans-serif;
@@ -19,23 +24,26 @@ body {
   text-align: center;
   color: var(--black);
   background-color: var(--primary);
+  width: 100vw;
+  top: 0;
+  left: 0;
+  margin-top: 0;
 }
 
 .main-content {
-  margin: auto;
-  padding: 1rem;
-  max-width: var(--width-break);
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
 }
 
 textarea {
   box-sizing: border-box;
   display: block;
-  width: 100%;
-  min-height: 20vh;
+  width: 80%;
+
   border-radius: 1rem;
-  margin-top: 2rem;
-  padding: 1em;
+  padding: 15px 10px;
   font-size: 1rem;
   font-family: 'Lilita One', Helvetica, Arial, sans-serif;
   text-align: left;
@@ -47,9 +55,9 @@ textarea {
   background-color: var(--primary);
   border: none;
   margin: 1rem 0rem;
-  padding: 1rem 2rem;
+  padding: 10px 15px;
   font-family: 'Luckiest Guy', Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: block;
   color: var(--black);
 }
@@ -59,32 +67,16 @@ textarea {
   font-size: 1rem;
   color: var(--primary);
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #output {
   border: 3px solid #05445e;
   border-radius: 1rem;
-  width: 100%;
-  min-height: 10vh;
-  max-height: 20vh;
+  width: 80%;
+  padding: 1.2rem 10px;
+  height: 2rem;
   overflow: scroll;
-}
-
-footer {
-  text-align: center;
-  background-color: var(--primary);
-  width: 100%;
-  position: fixed;
-  padding: 1rem;
-  bottom: 0;
-  color: var(--black);
-}
-
-footer p {
-  max-width: var(--width-break);
-  margin: auto;
-  color: var(--black);
 }
 
 .image {
@@ -95,4 +87,41 @@ footer p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background-color: #2e8bc0;
+  box-shadow: 0 0 10px #1e3d58;
+}
+li {
+  list-style-type: none;
+  margin-left: 0.5rem;
+}
+
+ul {
+  display: flex;
+}
+
+footer a {
+  color: black;
+  font-size: 1.5rem;
+  padding: 0 0.7rem;
+}
+
+.footer-heading {
+  text-align: center;
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: #fff;
 }
